@@ -5,8 +5,7 @@
     -webkit-perspective: 1000;
 }
 
-/* flip the pane when hovered */
-.card:hover .flipper, .card.hover .flipper {
+.card.flip .flipper {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }

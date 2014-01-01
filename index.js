@@ -11,7 +11,11 @@ var _ = require('lodash'),
 pf.cardClicked = function(i) {
     var j;
 
-    if (_.indexOf(openCards, i) >= 0 || _.indexOf(foundCards, i) >= 0) {
+    if (openCards.length < 2 && _.indexOf(openCards, i) >= 0) {
+        return;
+    }
+
+    if (_.indexOf(foundCards, i) >= 0) {
         return;
     }
 

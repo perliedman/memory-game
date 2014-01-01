@@ -25,10 +25,11 @@ module.exports = Class.extend({
 
         for (row = 0; row < rows; row++) {
             for (col = 0; col < cols; col++) {
-                card = $('<div class="card" id="card_' +
-                    row + '_' + col +
-                    '" style="background-image:url(' + cpics[c++] +
-                    ');"></div>');
+                card = $('<div class="card">' +
+                    '<div class="flipper">' +
+                    '<div class="front"></div>' +
+                    '<div class="back" style="background-image:url(' + cpics[c++] +
+                    ');"></div></div></div>');
                 div.append(card);
             }
         }

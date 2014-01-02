@@ -1,9 +1,14 @@
 var _ = require('lodash'),
     Playfield = require('./playfield'),
-    pf = new Playfield('playfield', 3, 2, [
+    pf = new Playfield('playfield', 4, 4, [
         'images/arvid1.jpg',
         'images/irma1.jpg',
-        'images/star.jpg'
+        'images/star.jpg',
+        'images/asa1.jpg',
+        'images/stina1.jpg',
+        'images/smilla1.jpg',
+        'images/tjejen1.jpg',
+        'images/per1.jpg'
     ]),
     openCards = [],
     foundCards = [];

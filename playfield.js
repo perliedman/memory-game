@@ -7,7 +7,6 @@ module.exports = Class.extend({
         var w = (128 + 16) * cols,
             h = (128 + 16) * rows,
             _this = this,
-            i,
             card;
         if (pics.length * 2 < cols * rows) {
             throw 'Not enough pics';
